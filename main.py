@@ -16,11 +16,11 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 from telegram.constants import ParseMode
 
-from data_fetcher import (
+from src.data_fetcher import (
     fetch_all_market_data, fetch_gmgn_safety,
     get_sol_price, get_token_price
 )
-from ai_analyzer import analyze_full_market, analyze_token_safety, generate_market_report
+from src.ai_analyzer import analyze_full_market, analyze_token_safety, generate_market_report
 
 # ── Config ──────────────────────────────────────────────────────
 TELEGRAM_TOKEN  = os.getenv("TELEGRAM_TOKEN", "")
