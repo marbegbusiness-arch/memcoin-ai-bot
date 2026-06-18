@@ -31,7 +31,7 @@ SIM_MODE        = os.getenv("SIMULATION_MODE", "true").lower() == "true"
 logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     level=logging.INFO,
-    handlers=[logging.FileHandler("logs/bot.log"), logging.StreamHandler()]
+    handlers=[logging.StreamHandler()]
 )
 log = logging.getLogger(__name__)
 
